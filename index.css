@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores 
+White : #ffffff
+Black : #000000
+Bistre : #311E10
+Light Green : #8CD790
+Castleton Green : #285943
+*/
+
+body{
+    background-color: #8cd790;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px 1px solid black;
+
+}
