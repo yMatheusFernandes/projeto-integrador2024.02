@@ -149,12 +149,12 @@ h1 {
 
 @media (max-width: 480px) {
   .tree-gallery {
-      grid-template-columns: repeat(1, 1fr); /* Altera para 1 coluna em telas muito pequenas */
+      grid-template-columns: repeat(2, 1fr); /* Altera para 1 coluna em telas muito pequenas */
   }
 
   .circle {
-      width: 40vw; /* Círculos ainda maiores para telas muito pequenas */
-      height: 40vw;
+      width: 30vw; /* Círculos ainda maiores para telas muito pequenas */
+      height: 30vw;
   }
 }
 
