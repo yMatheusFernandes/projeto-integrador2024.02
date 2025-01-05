@@ -145,8 +145,8 @@ h1 {
     }
   
     .circle {
-      width: 30vw; /* Círculos maiores em telas médias */
-      height: 30vw;
+      width: 25vw; /* Círculos maiores em telas médias */
+      height: 25vw;
     }
   }
   
@@ -156,8 +156,8 @@ h1 {
     }
   
     .circle {
-      width: 35vw; /* Círculos maiores em telas pequenas */
-      height: 35vw;
+      width: 30vw; /* Círculos maiores em telas pequenas */
+      height: 30vw;
     }
   }
   
