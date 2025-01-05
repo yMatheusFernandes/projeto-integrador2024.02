@@ -14,22 +14,49 @@ Castleton Green : #285943
     padding: 0;
     box-sizing: border-box;
 }
+/*/////////////////////////////////////////////////////////*/
 
+
+/*/////////////////////////////////////////////////////////////////*/
 html {
     font-size: 16px;
     scroll-behavior: smooth;
     height: 100%; /* Garante que o HTML ocupe toda a altura */
 }
 
+/* Fundo com Parallax */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #8cd790;
+    background-image: url('image/background/14ed267accd660af4a6655b165e0d0f1.jpg'); /* Caminho para a imagem */
+    background-attachment: fixed; /* Ativa o parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem ocupar todo o fundo */
     color: #222;
     line-height: 1.5;
     display: flex;
     flex-direction: column; /* Organiza o conteúdo verticalmente */
     min-height: 100vh; /* Garante que o body ocupe toda a altura */
 }
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Desativa o efeito parallax em dispositivos móveis */
+    }
+}
+
+/*
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #8cd790;
+    color: #222;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;  
+    min-height: 100vh; 
+}
+*/
 
 h1 {
   text-align: center;
