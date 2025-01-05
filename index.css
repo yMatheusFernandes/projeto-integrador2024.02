@@ -38,13 +38,13 @@ body {
     flex-direction: column; /* Organiza o conteúdo verticalmente */
     min-height: 100vh; /* Garante que o body ocupe toda a altura */
 }
-
-/* Ajuste para dispositivos móveis */
+/*
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Desativa o efeito parallax em dispositivos móveis */
+        background-attachment: scroll; 
     }
 }
+*/
 
 /*
 body {
@@ -94,70 +94,73 @@ h1 {
 }
 
 /*///////////////////////////TREE-GALERY/////////////////////////////////*/
-
+/* Configuração base para a galeria */
 .tree-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-  gap: 20px; /* Espaçamento entre os itens */
-  justify-items: center; /* Centraliza os itens horizontalmente */
-  margin: 30px auto; /* Espaçamento ao redor da galeria */
-  max-width: 800px; /* Limita a largura da galeria */
-}
-
-.tree-item {
-  text-align: center;
-}
-
-.circle {
-  width: 20vw; /* Largura ajustada a 20% da largura da tela */
-  height: 20vw; /* Altura igual à largura para manter a proporção */
-  max-width: 150px; /* Limite máximo para círculos em telas maiores */
-  max-height: 150px;
-  border-radius: 50%; /* Faz o elemento ficar circular */
-  background-color: #8CD790; /* Fundo verde como placeholder */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-  display: flex;
-  align-items: center; /* Centraliza conteúdo */
-  justify-content: center; /* Centraliza conteúdo */
-  overflow: hidden; /* Garante que imagens fiquem dentro do círculo */
-}
-
-.circle img {
-  width: 100%; /* Faz a imagem ocupar 100% do círculo */
-  height: 100%; /* Faz a imagem ocupar 100% do círculo */
-  object-fit: cover; /* Ajusta a imagem para cobrir o círculo sem distorção */
-}
-
-.tree-item p {
-  margin-top: 10px; /* Espaçamento entre o círculo e o texto */
-  font-size: 16px;
-  color: #285943; /* Texto verde escuro */
-  font-weight: bold;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .tree-gallery {
-      grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas em telas menores */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    margin: 30px auto; /* Espaçamento ao redor da galeria */
+    max-width: 800px; /* Limita a largura da galeria */
   }
-
+  
+  /* Itens da galeria */
+  .tree-item {
+    text-align: center;
+  }
+  
+  /* Círculos para as imagens */
   .circle {
-      width: 30vw; /* Círculos maiores em telas menores */
+    width: 20vw; /* Largura ajustada a 20% da largura da tela */
+    height: 20vw; /* Altura igual à largura para manter a proporção */
+    max-width: 150px; /* Limite máximo para círculos em telas maiores */
+    max-height: 150px;
+    border-radius: 50%; /* Faz o elemento ficar circular */
+    background-color: #8CD790; /* Fundo verde como placeholder */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex;
+    align-items: center; /* Centraliza conteúdo */
+    justify-content: center; /* Centraliza conteúdo */
+    overflow: hidden; /* Garante que imagens fiquem dentro do círculo */
+  }
+  
+  .circle img {
+    width: 100%; /* Faz a imagem ocupar 100% do círculo */
+    height: 100%; /* Faz a imagem ocupar 100% do círculo */
+    object-fit: cover; /* Ajusta a imagem para cobrir o círculo sem distorção */
+  }
+  
+  /* Texto abaixo dos círculos */
+  .tree-item p {
+    margin-top: 10px; /* Espaçamento entre o círculo e o texto */
+    font-size: 16px;
+    color: #285943; /* Texto verde escuro */
+    font-weight: bold;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .tree-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
+    }
+  
+    .circle {
+      width: 30vw; /* Círculos maiores em telas médias */
       height: 30vw;
+    }
   }
-}
-
-@media (max-width: 480px) {
-  .tree-gallery {
-      grid-template-columns: repeat(2, 1fr); /* Altera para 1 coluna em telas muito pequenas */
+  
+  @media (max-width: 480px) {
+    .tree-gallery {
+      grid-template-columns: repeat(2, 1fr); /* Garante ao menos 2 colunas em telas pequenas */
+    }
+  
+    .circle {
+      width: 35vw; /* Círculos maiores em telas pequenas */
+      height: 35vw;
+    }
   }
-
-  .circle {
-      width: 30vw; /* Círculos ainda maiores para telas muito pequenas */
-      height: 30vw;
-  }
-}
-
+  
 /*//////////////////////////////RODAPÉ///////////////////////////////*/
 
 footer {
