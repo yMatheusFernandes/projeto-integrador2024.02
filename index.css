@@ -214,7 +214,6 @@ footer {
     padding-top: 10px;
 }
 
-
 @media (max-width: 768px) {
     #info {
         width: 90%; /* Ocupa quase toda a largura em telas pequenas */
@@ -226,26 +225,18 @@ footer {
     .footer-container {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Reduz o espaço entre os elementos */
-        padding: 10px 0; /* Reduz o padding total */
     }
 
     .footer-section {
         text-align: center;
-        margin: 5px 0; /* Reduz as margens */
     }
+}
 
-    .footer-section h4 {
-        margin-bottom: 10px; /* Reduz o espaço abaixo do título */
+@media (min-width: 1200px) {
+    #info {
+        width: 40%; /* Ocupa menos espaço em telas maiores */
     }
-
-    .footer-section ul li {
-        margin: 3px 0; /* Reduz o espaço entre os itens da lista */
-    }
-
-    .footer-bottom {
-        margin-top: 10px; /* Reduz o espaço superior */
-        padding-top: 5px; /* Reduz o padding no topo */
-        font-size: 12px; /* Texto menor no rodapé inferior */
+    #info p {
+        font-size: 20px; /* Texto maior em telas grandes */
     }
 }
