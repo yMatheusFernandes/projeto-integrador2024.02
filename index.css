@@ -27,7 +27,7 @@ html {
 /* Fundo com Parallax */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('image/background/14ed267accd660af4a6655b165e0d0f1.jpg'); /* Caminho para a imagem */
+    background-image: url('image/background/ba363368-2ed1-45df-8b56-a311e03ffe6b.jpg'); /* Caminho para a imagem */
     background-attachment: fixed; /* Ativa o parallax */
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ h1 {
   .tree-item p {
     margin-top: 10px; /* Espaçamento entre o círculo e o texto */
     font-size: 16px;
-    color: #285943; /* Texto verde escuro */
+    color: #000000; /* Texto verde escuro */
     font-weight: bold;
   }
   
@@ -214,6 +214,7 @@ footer {
     padding-top: 10px;
 }
 
+
 @media (max-width: 768px) {
     #info {
         width: 90%; /* Ocupa quase toda a largura em telas pequenas */
@@ -225,18 +226,26 @@ footer {
     .footer-container {
         flex-direction: column;
         align-items: center;
+        gap: 10px; /* Reduz o espaço entre os elementos */
+        padding: 10px 0; /* Reduz o padding total */
     }
 
     .footer-section {
         text-align: center;
+        margin: 5px 0; /* Reduz as margens */
     }
-}
 
-@media (min-width: 1200px) {
-    #info {
-        width: 40%; /* Ocupa menos espaço em telas maiores */
+    .footer-section h4 {
+        margin-bottom: 10px; /* Reduz o espaço abaixo do título */
     }
-    #info p {
-        font-size: 20px; /* Texto maior em telas grandes */
+
+    .footer-section ul li {
+        margin: 3px 0; /* Reduz o espaço entre os itens da lista */
+    }
+
+    .footer-bottom {
+        margin-top: 10px; /* Reduz o espaço superior */
+        padding-top: 5px; /* Reduz o padding no topo */
+        font-size: 12px; /* Texto menor no rodapé inferior */
     }
 }
