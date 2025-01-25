@@ -101,7 +101,7 @@ h2 {
     background-color: #fff;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center;
+    text-align: left;
     margin: 20px auto; /* Centraliza horizontalmente */
 }
 
@@ -220,8 +220,50 @@ h2 {
     z-index: 999; /* Certifica-se de que o fundo está logo abaixo do popup */
 }
 
+/*//////////////////////////////SCROLL HORIZONTAL///////////////////////////////*/
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
 
+.scroll-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
 
+.scroll-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.scroll-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
   
 /*//////////////////////////////RODAPÉ///////////////////////////////*/
 
